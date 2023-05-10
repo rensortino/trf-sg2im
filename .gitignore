@@ -133,5 +133,3 @@ logs
 wandb
 data
 .vscode
-*.png
-!images/*.png
