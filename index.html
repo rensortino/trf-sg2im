@@ -56,7 +56,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="rensortino.github.io" target="_blank">Renato Sortino</a><sup>*</sup>,</span>
+                <a href="rensortino.github.io" target="_blank">Renato Sortino</a>,</span>
                 <span class="author-block">
                   <a href="http://www.perceivelab.com/profile/spalazzo" target="_blank">Simone Palazzo</a>,</span>
                   <span class="author-block">
@@ -66,7 +66,7 @@
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><a href="http://www.perceivelab.com">PeRCeiVe Lab</a><br>Computer Vision and Image Understanding</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -129,7 +129,7 @@
     <div class="hero-body">
       <img src="static/images/thumbnail.gif" alt="Teaser of the project"/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Our method uses a scene graph to predict a scene layout that will condition a generative model to obtain the final image. The whole framework, from layout prediction to image generation, is based on transformers.
       </h2>
     </div>
   </div>
@@ -170,18 +170,6 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/architecture.png" alt="Architecture of the proposed approach"/>
-        <h2 class="subtitle has-text-centered">
-          Overview of our framework. The scene graph is fed to our SGTransformer module, which updates the node feature vectors 
-          with multi-head attention on the neighboring nodes and the edge feature vectors to predict the layout. This is treated 
-          as a sequence of discrete elements ci , which are triplets where the first two elements are bounding box coordinates, 
-          top left and bottom right, respectively, and the last one is the object category. The Image Transformer predicts a 
-          sequence of codebook indices si that are then reshaped and projected back onto the pixel space using a pre-trained 
-          VQVAE decoder.
-        </h2>
-      </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/sota1.png" alt="Comparison against SOTA"/>
@@ -200,20 +188,16 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/alterations1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/alterations1.png" alt="Scene graph alterations"/>
         <h2 class="subtitle has-text-centered">
-         Manipulation of input scene graphs on the COCO-Stuff dataset. For each block of images: we start from an
-        initial scene graph (top line) and as we move to the bottom, at each line, we modify some concepts/relations (highlighted
-        in green) in the graph.
+         Manipulation of input scene graphs on the COCO-Stuff dataset. Horizontal axis: generation variations with the same scene graph
        </h2>
      </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/alterations2.png" alt="MY ALT TEXT"/>
+        <img src="static/images/alterations2.png" alt="Scene graph alterations"/>
         <h2 class="subtitle has-text-centered">
-         Manipulation of input scene graphs on the COCO-Stuff dataset. For each block of images: we start from an
-        initial scene graph (top line) and as we move to the bottom, at each line, we modify some concepts/relations (highlighted
-        in green) in the graph.
+         Manipulation of input scene graphs on the COCO-Stuff dataset. Horizontal axis: generation variations with the same scene graph
        </h2>
      </div>
      <!-- <div class="item">
@@ -232,23 +216,23 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
+      Paper video.
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+            Youtube embed code here
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
@@ -256,7 +240,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">PUT HERE ANIMATIONS OF ALTERATIONS</h2>
+      <h2 class="title is-3">TODO: Animations of alterations</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
@@ -291,7 +275,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -301,7 +285,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
