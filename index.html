@@ -73,7 +73,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2303.04634.pdf" target="_blank"
+                        <a href="https://www.sciencedirect.com/science/article/pii/S1077314223001017" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -293,7 +293,18 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{SORTINO2023103721,
+  title = {Transformer-based image generation from scene graphs},
+  journal = {Computer Vision and Image Understanding},
+  pages = {103721},
+  year = {2023},
+  issn = {1077-3142},
+  doi = {https://doi.org/10.1016/j.cviu.2023.103721},
+  url = {https://www.sciencedirect.com/science/article/pii/S1077314223001017},
+  author = {Renato Sortino and Simone Palazzo and Francesco Rundo and Concetto Spampinato},
+  keywords = {Scene graphs, Transformers, Generative models, Conditional image generation},
+  abstract = {Graph-structured scene descriptions can be efficiently used in generative models to control the composition of the generated image. Previous approaches are based on the combination of graph convolutional networks and adversarial methods for layout prediction and image generation, respectively. In this work, we show how employing multi-head attention to encode the graph information, as well as using a transformer-based model in the latent space for image generation can improve the quality of the sampled data, without the need to employ adversarial models with the subsequent advantage in terms of training stability. The proposed approach, specifically, is entirely based on transformer architectures both for encoding scene graphs into intermediate object layouts and for decoding these layouts into images, passing through a lower dimensional space learned by a vector-quantized variational autoencoder. Our approach shows an improved image quality with respect to state-of-the-art methods as well as a higher degree of diversity among multiple generations from the same scene graph. We evaluate our approach on three public datasets: Visual Genome, COCO, and CLEVR. We achieve an Inception Score of 13.7 and 12.8, and an FID of 52.3 and 60.3, on COCO and Visual Genome, respectively. We perform ablation studies on our contributions to assess the impact of each component. Code is available at https://github.com/perceivelab/trf-sg2im.}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
