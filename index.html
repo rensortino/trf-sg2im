@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="A fully transformer-based method for image generation conditioned on scene graphs">
+  <meta property="og:title" content="Transformer-Based Image Generation from Scene Graphs"/>
+  <meta property="og:description" content="A fully transformer-based method for image generation conditioned on scene graphs"/>
+  <meta property="og:url" content="https://rensortino.github.io/trf-sg2im/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Transformer-Based Image Generation from Scene Graphs">
+  <meta name="twitter:description" content="A fully transformer-based method for image generation conditioned on scene graphs">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="scene-graphs, image-generation, transformers, pytorch, ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -127,7 +127,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/thumbnail.gif" alt="Teaser of the project"/>
+      <img src="static/images/teaser.gif" alt="Teaser of the project"/>
       <h2 class="subtitle has-text-centered">
         Our method uses a scene graph to predict a scene layout that will condition a generative model to obtain the final image. The whole framework, from layout prediction to image generation, is based on transformers.
       </h2>
@@ -240,29 +240,28 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">TODO: Animations of alterations</h2>
+      <h2 class="title is-3">Graph Alterations</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
+        <!-- <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/alterations1.gif"
             type="video/mp4">
           </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+        </div> -->
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/videos/alterations1.gif" alt="Scene graph alterations"/>
+          <h2 class="subtitle has-text-centered">
+           Manipulation of input scene graphs on the COCO-Stuff dataset.
+         </h2>
+       </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/videos/alterations2.gif" alt="Scene graph alterations"/>
+          <h2 class="subtitle has-text-centered">
+           Manipulation of input scene graphs on the COCO-Stuff dataset.
+         </h2>
+       </div>
       </div>
     </div>
   </div>
